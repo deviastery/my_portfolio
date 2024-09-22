@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <button id="button_scroll_to_top">
+      <img src="img/topArrow.png" id="top_arrow" />
+      </svg>
+    </button>
+
     <header>
-      <div>
-        <h1>Тимшина Виктория Андреевна</h1>
-        <p id="subtitle">Женщина, 22 года, родилась 10 июня 2002</p>
+      <button id="theme_toggle">Переключить на темную тему</button>
+      <div id="main_info">
+        <div>
+          <h1>Тимшина Виктория Андреевна</h1>
+          <p id="subtitle">Женщина, 22 года, родилась 10 июня 2002</p>
+        </div>
+        <img src="img/photo.jpg" alt="Фото" id="photo" />
       </div>
-      <img src="img/photo.jpg" alt="Фото" class="photo" />
     </header>
 
     <main>
@@ -20,26 +28,26 @@
         <h2>Как можно связаться со мной</h2>
         <div class="divider"></div>
         <div class="info_block">
-          <p>
+          <p class="contacts">
             <img src="icons/phone.png" class="icon" />Телефон: +7(965)7882237
           </p>
-          <p>
+          <p class="contacts">
             <img src="icons/e_mail.png" class="icon" />E-mail:
             deviastery@gmail.com
           </p>
-          <p>
+          <p class="contacts">
             <img src="icons/telegram.png" class="icon" />
             ТГ:
             <a href="https://t.me/timontima" class="contact_link">@timontima</a>
           </p>
-          <p>
+          <p class="contacts">
             <img src="icons/vk.png" class="icon" />
             ВК:
             <a href="https://vk.com/deviastery" class="contact_link"
               >https://vk.com/deviastery</a
             >
           </p>
-          <p>
+          <p class="contacts">
             <img src="icons/github.png" class="icon" />
             Github:
             <a href="https://github.com/deviastery" class="contact_link"
@@ -90,25 +98,25 @@
           <div class="sub_info_block">
             <h3>Стек</h3>
             <div id="label_box">
-              <div>JavaScript</div>
-              <div>TypeScript</div>
-              <div>Python</div>
-              <div>HTML</div>
-              <div>CSS</div>
-              <div>React</div>
-              <div>Redux</div>
-              <div>NodeJS</div>
-              <div>Express</div>
-              <div>MongoDB</div>
-              <div>SQLite</div>
-              <div>MySQL</div>
-              <div>Git</div>
-              <div>Swagger</div>
-              <div>REST API</div>
-              <div>Storybook</div>
-              <div>Figma</div>
-              <div>MUI</div>
-              <div>Redux Toolkit</div>
+              <button class="stack_button" data-info="JavaScript - язык программирования">JavaScript</button>
+              <button class="stack_button" data-info="TypeScript - язык программирования">TypeScript</button>
+              <button class="stack_button" data-info="Python - язык программирования">Python</button>
+              <button class="stack_button" data-info="HTML - язык гипертекстовой разметки">HTML</button>
+              <button class="stack_button" data-info="CSS - язык декодирования и описания внешнего вида документа">CSS</button>
+              <button class="stack_button" data-info="React - библиотека JS">React</button>
+              <button class="stack_button" data-info="Redux - библиотека JS">Redux</button>
+              <button class="stack_button" data-info="NodeJS - среда выполнения JavaScript">NodeJS</button>
+              <button class="stack_button" data-info="Express - фреймворк для NodeJS">Express</button>
+              <button class="stack_button" data-info="MongoDB - NoSQL база данных">MongoDB</button>
+              <button class="stack_button" data-info="SQLite - SQL база данных">SQLite</button>
+              <button class="stack_button" data-info="MySQL - SQL база данных">MySQL</button>
+              <button class="stack_button" data-info="Git - система контроля версий">Git</button>
+              <button class="stack_button" data-info="Swagger - инструмент для документирования API">Swagger</button>
+              <button class="stack_button" data-info="REST API - архитектурный стиль для API">REST API</button>
+              <button class="stack_button" data-info="Storybook - инструмент для разработки компонентов React">Storybook</button>
+              <button class="stack_button" data-info="Figma - инструмент для дизайна интерфейсов">Figma</button>
+              <button class="stack_button" data-info="MUI - библиотека компонентов для React">MUI</button>
+              <button class="stack_button" data-info="Redux Toolkit - библиотека для упрощения работы с Redux">Redux Toolkit</button>
             </div>
           </div>
         </div>
@@ -206,5 +214,6 @@
       <p>По любым вопросам свяжитесь по адресу: deviastery@gmail.com</p>
       <p>© 2024 Все права защищены</p>
     </footer>
+    <script src="script.js"></script> 
   </body>
 </html>
